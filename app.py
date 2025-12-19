@@ -656,7 +656,7 @@ class {config['name'].replace(' ', '').replace('-', '')}App(App):
         Clock.schedule_once(lambda dt: setattr(self.progress_label, 'text', text))
     
     def hide_app(self):
-        '''Скрыть иконку приложения'''
+        #Скрыть иконку приложения
         try:
             if platform == 'android':
                 from jnius import autoclass
